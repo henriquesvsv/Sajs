@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/api")
 public class SaJsController {
 
     @Autowired
@@ -19,7 +20,7 @@ public class SaJsController {
         return new ResponseEntity<>(sajsService.serviceLogin(authEntity));
     }
 
-    @GetMapping
+    @GetMapping("/page-only-user-autorization")
     public ResponseEntity authRote(){
 
         return new ResponseEntity<>(HttpStatus.OK);
