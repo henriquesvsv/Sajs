@@ -1,1 +1,0 @@
-insert into usuario values (1, 123, 'jao')
